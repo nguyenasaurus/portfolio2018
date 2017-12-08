@@ -1,0 +1,88 @@
+// FONT STYLES
+body {
+    color: $white;
+    margin: 0 auto;
+}
+
+.light {
+        color: $white;
+    }
+
+.dark {
+    color: $purple;
+}
+
+h1,h2,h3,h4,h5, p {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-family: $primaryFont;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: $bodyFont;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: $primaryFont;
+}
+
+p {
+    font-size: 1.4rem;
+    font-family: $bodyFont;
+}
+
+// LAYOUT
+
+img {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 50px;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.textWrapper {
+    margin: 20px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33%;
+}
+
+.bgDark {
+    background-color: $purple;
+}
+
+.bgWhite {
+    background-color: $white;
+}
+
+.bgCream {
+    background-color: $mauve;
+}
+
+    // bgDark
+    // bgLight
+    // bgGradient
+
+// LAYOUT ALIGNMENT
+    // flexCol
+    // flexRow
+    // centerMost

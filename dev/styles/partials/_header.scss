@@ -1,0 +1,85 @@
+// NAVIGATION
+
+nav {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.navPositioning {
+        width: 80%;
+        @include flexDirect(row);
+        @include flexJustify(space-between);
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    @include flexDirect(row);
+    li {
+        margin: 0 20px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.button {
+    margin: 20px;
+    padding: 5px 15px;
+    border: 1px solid $white;
+}
+
+// HEADER
+
+.mainGradient {
+    background: linear-gradient(315deg, $pink, $blue, $purple);
+    background-size: 100% 100%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    @-webkit-keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    @-moz-keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    @keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    height: 1000px;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    @include flexDirect(column);
+    @include flexJustify(center);
+    align-content: center;
+    align-items: center;
+    h1 {
+        margin: 15px auto;
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        margin: 10px auto;
+        font-size: 1rem;
+    }
+}
+
+.logo {
+    width: 45%;
+}

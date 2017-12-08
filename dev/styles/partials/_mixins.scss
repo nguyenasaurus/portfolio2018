@@ -1,0 +1,27 @@
+// MIXINS
+
+@mixin borderRadius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    @include border-radius(50%);
+}
+
+@mixin flexDirect($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flexJustify ($spacing) {
+    justify-content: $spacing;
+}
+
+@mixin textAlign($alignment) {
+    text-align: $alignment;
+}

@@ -1,0 +1,25 @@
+// logo animation
+
+.mainGradient {
+    background: linear-gradient(315deg, $pink, $blue, $purple);
+    background-size: 100% 100%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    @-webkit-keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    @-moz-keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    @keyframes gradientAnimation {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+    height: 1000px;
+}

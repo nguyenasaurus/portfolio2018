@@ -1,0 +1,12 @@
+// portfolio
+.projectSection {
+    @extend .row;
+    margin: 75px auto;
+    text-align: center;
+    ul {
+        @include flexDirect(row);
+        @include flexJustify(space-between);
+        @extend .wrapper;
+        margin: 0 auto;
+    }
+}

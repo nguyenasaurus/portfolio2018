@@ -14,6 +14,17 @@ nav {
         margin: 0 auto;
 }
 
+.navLogo {
+    @include circle(70px);
+    @include centerMost;
+    background-color: rgba(255,255,255,0.5);
+    img {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+}
+
 ul {
     list-style: none;
     margin:0;
@@ -38,27 +49,28 @@ a.button {
 // HEADER
 
 .mainGradient {
-    background: linear-gradient(315deg, $pink, $blue, $purple);
-    background-size: 100% 100%;
-    -webkit-animation: gradientAnimation 10s ease infinite;
-    -moz-animation: gradientAnimation 10s ease infinite;
-    animation: gradientAnimation 10s ease infinite;
-    @-webkit-keyframes gradientAnimation {
-        0%{background-position:0% 72%}
-        50%{background-position:100% 29%}
-        100%{background-position:0% 72%}
+    background: linear-gradient(320deg, #eb9687,#00a28a,#352e45);
+    background-size: 600% 600%;
+
+    -webkit-animation: gradientAnimate 20s ease infinite;
+    -moz-animation: gradientAnimate 20s ease infinite;
+    animation: gradientAnimate 20s ease infinite;
+
+    @-webkit-keyframes gradientAnimate {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
     }
-    @-moz-keyframes gradientAnimation {
-        0%{background-position:0% 72%}
-        50%{background-position:100% 29%}
-        100%{background-position:0% 72%}
+    @-moz-keyframes gradientAnimate {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
     }
-    @keyframes gradientAnimation {
-        0%{background-position:0% 72%}
-        50%{background-position:100% 29%}
-        100%{background-position:0% 72%}
+    @keyframes gradientAnimate { 
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
     }
-    height: 1000px;
 }
 
 .intro {

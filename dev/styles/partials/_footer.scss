@@ -1,0 +1,8 @@
+footer {
+    margin: 20px auto;
+    @extend .wrapper;
+    border-top: 4px solid black;
+    p {
+        font-size: 0.8rem;
+    }
+}

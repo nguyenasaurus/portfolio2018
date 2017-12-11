@@ -1,0 +1,78 @@
+section.aboutGradient {
+    @extend .mainGradient;
+    width: 100%;
+    display: inline-block;
+    .aboutText {
+        margin: 60px auto;
+        @extend .wrapper;
+        width: 90%;
+        float:right;
+        background: $mauve;
+        height: 80vh;
+        -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        h3 {
+            margin: 20px 0 0 40px;
+            padding-top:20px;
+        }
+        p {
+            font-size: 1rem;
+            color: $grey;
+            line-height: 1.6rem;
+            margin: 40px;
+        }
+        .button {
+            border-color: $purple;
+            color: $purple;
+        }
+    }
+}
+
+// .triangle {
+//     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+//     clip-path: polygon(0 0, 0% 100%, 100% 0);
+// }
+
+div.textTriangle {
+    shape-outside: polygon(0 0, 0 200px, 400px 800px);
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.aboutInfo {
+    @extend .wrapper;
+    width: 50%;
+    margin-right: 80px;
+    border: 1px solid black;
+    position: relative;
+    bottom: 200px;
+    float:right;
+    .socilInfo {
+        margin-top: 10px;
+        .h3 {
+            margin: 20px auto;
+        }
+    }
+    .socialIcons {
+        @include flexDirect(row);
+        @include flexJustify(left);
+        .circle {
+            @include circle(30px);
+            @include centerMost;
+            background: $mauve;
+            margin: 0 10px;
+        }
+    }
+
+    .profileImg {
+        width: 50%;
+        float: right;
+        position: relative;
+        bottom: 350px;
+    }
+}
+
+i.fa {
+    color: $purple;
+}

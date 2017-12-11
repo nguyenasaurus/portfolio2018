@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>React Boilerplate</title>
+	<title>Justine Nguyen Front End Javascript React Developer</title>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -37,7 +37,11 @@
 				</ul>
 				</nav>
 			<div class="projectPositioning">
-				<div class="project"></div>
+				<div class="project"><img src="dev/styles/images/levidrome.jpg" alt="">
+					<!-- https://levidromeapp.firebaseapp.com/
+					https://github.com/KJMKJM/Levidrome
+					-->
+				</div>
 				<div class="project"></div>
 				<div class="project"></div>
 			</div>
@@ -45,35 +49,49 @@
 	</header>
 	<section id="about" class="aboutGradient">
 		<article class="aboutText">
+			<div class="textTriangle"></div>
 			<h3 class="dark">Hello, my name is Justine Nguyen</h3>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptas, soluta deleniti dolores maxime deserunt accusamus quas recusandae dolore possimus eligendi accusantium expedita beatae porro earum quaerat, repudiandae eius repellat voluptatum commodi nostrum. Deserunt ut est impedit voluptates suscipit cumque eius repudiandae consectetur id. Soluta, voluptatem. Inventore dolore, omnis placeat praesentium voluptatum enim modi odit expedita laudantium ab aspernatur corporis.</p>
 			<div class="logoRow"></div>
 			<a href="/resume-experience" class="button">CV</a>
 		</article>
+		
 		<article class="aboutInfo">
 			<div class="socialInfo">
-				<div class="circle">GIT</div>
-				<div class="circle">Insta</div>
-				<div class="circle">Twitter</div>
+				<h3 class="dark">Let's get social!</h3>
+				<div class="socialIcons">
+					<div class="circle">
+						<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+					</div>
+					<div class="circle">
+						<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+					</div>
+					<div class="circle">
+						<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+					</div>
+				</div>
 			</div>
 			<div class="profileImg">
-				<img src="" alt="">
+				<img src="dev/styles/images/justine-nguyen-front-end-javscript-react-developer.jpg" alt="">
 			</div>
 		</article>
 	</section>
-	<section id="contact" class="lightBackground">
-		<div class="wrapper">
+	<section id="contact" class="contactBgWhite">
+		<div class="contact">
 			<div class="col-2">
-				illustration here
+				<p>illustration here</p>
 			</div>
 			<div class="col-2">
 				<h3 class="dark">Say hello, leave a note</h3>
 				<h4>Or email directly!</h4>
 				<p class="ctaText">
-					justine@nguyenasaurus.com
+					<i class="fa fa-envelope-o" aria-hidden="true"></i> justine@nguyenasaurus.com
 				</p>
-				<form action="">
-					<input type="text">
+				<form method="POST" action="http://formspree.io/justine@nguyenasaurus.com">
+					<input class="col-2" type="text" name="name" placeholder="Your Name">
+					<input class="col-2" type="email" name="email" placeholder="Your Email">
+					<textarea class="full" name="message" placeholder="Your Message"></textarea>
+					<button type="submit" class="button">Send</button>
 				</form>
 			</div>
 		</div>
@@ -85,7 +103,7 @@
 		</p>
 	</footer>
 
-
+	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

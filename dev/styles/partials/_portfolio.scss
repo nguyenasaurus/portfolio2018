@@ -23,7 +23,7 @@ nav.projects {
     bottom: -75px;
     .project {
         width: 30%;
-        height: 250px;
+        height: inherit;
         background: $mauve;
         margin: 0 auto;
     }

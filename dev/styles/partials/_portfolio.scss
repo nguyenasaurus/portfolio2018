@@ -7,6 +7,24 @@
         @include flexDirect(row);
         @include flexJustify(space-between);
         @extend .wrapper;
+        margin: 0px auto;
+    }
+}
+
+nav.projects {
+    margin: 30px auto;
+}
+
+.projectPositioning {
+    @include flexDirect(row);
+    @extend .wrapper;
+    margin: 20px auto;
+    position: relative;
+    bottom: -75px;
+    .project {
+        width: 30%;
+        height: 250px;
+        background: $mauve;
         margin: 0 auto;
     }
 }

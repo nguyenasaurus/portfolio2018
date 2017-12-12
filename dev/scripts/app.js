@@ -11,3 +11,9 @@ console.log('hey');
       $('#sticky').css('display', 'none');
     }
   });
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});

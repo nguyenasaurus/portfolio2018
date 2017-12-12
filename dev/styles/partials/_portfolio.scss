@@ -3,6 +3,10 @@
     @extend .row;
     margin: 75px auto;
     text-align: center;
+    h3 {
+        text-align: center;
+        margin: 20px auto;
+    }
     ul {
         @include flexDirect(row);
         @include flexJustify(space-between);
@@ -15,49 +19,38 @@ nav.projects {
     margin: 30px auto;
 }
 
-.projectPositioning {
-    @include flexDirect(row);
+ul.projectGallery {
+    margin: 40px auto;
+    display: block;
     @extend .wrapper;
-    margin: 20px auto;
-    margin-bottom: 100px;
-    position: relative;
-    bottom: -50px;
-    .project {
-        width: 30%;
-        height: inherit;
-        margin: 0 auto;
-        .projectInfo {
-            @include flexDirect(column);
-            justify-content: space-around;
-            position: relative;
-            bottom: 51%;
-            background: rgba(231, 220, 217, 0.9);
-            color: #5f4b8b;
-            text-align: left;
-            width: 84%;
-            margin: 0 auto;
-            height: 45%;
-            .mainInfo {
-                margin: 20px;
-            }
-            h4 {
-                @extend h1;
-                font-size: 1.2rem;
-            }
-            p {
-                font-size: 0.7rem;
-            }
+}
+
+li.project {
+    width: 100%;
+    .projectInfo {
+        color: $purple;
+        text-align:right;
+        height:inherit;
+        background: $white;
+        padding: 20px;
+        width: 80%;
+        h4 {
+            @extend h1;
+            font-size: 1.2rem;
         }
-        .links{
-            font-family: $bodyFont;
+        p.languages {
             font-size: 0.8rem;
-            margin: 20px;
+        }
+        .links {
             a {
-                margin-right: 15px;
-            &:hover {
-                text-decoration: underline;
-                font-weight: bold;
-            }
+                margin-top: 15px;
+                margin-right: 10px;
+                font-size: 0.8rem;
+                border-bottom: 1px solid transparent;
+                transition: all 0.5s ease 0s;
+                &:hover {
+                    border-bottom: 1px solid $purple;
+                }
             }
         }
     }

@@ -10,40 +10,71 @@
 	<header id="home" class="mainGradient">
 		<section class="intro">
 			<div class="logo">
-				<img src="dev/styles/images/jn_logomark2018.svg" alt="">
+				<img src="public/styles/images/jn_logomark2018.svg" alt="">
 			</div>
 			<h1>Justine Nguyen</h1>
 			<h2>front-end javascript/react developer</h2>
 		</section>
 	
-		<nav class="navPositioning">
+		<nav id="stickytypeheader" class="navPositioning">
 			<ul class="nav">
 				<li>Projects</li>
 				<li>About</li>
 			</ul>
 			<div class="navLogo">
-				<img src="dev/styles/images/jn_logomark2018.svg" alt="">
+				<img src="public/styles/images/jn_logomark2018.svg" alt="">
 			</div>
 			<a href="" class="button">Say hello!</a>
 		</nav>
 		
 		<section class="projectSection">
 			<h3 class="light">Projects</h3>
-			<nav class="projects">
-				<ul>
-					<li>html + css + javascript</li>
-					<li>react</li>
-					<li>front-end experiments</li>
-				</ul>
-				</nav>
+				<!-- <nav class="projects">
+					<ul>
+						<li>html + css + javascript</li>
+						<li>react</li>
+						<li>front-end experiments</li>
+					</ul>
+				</nav> -->
 			<div class="projectPositioning">
-				<div class="project"><img src="dev/styles/images/levidrome.jpg" alt="">
-					<!-- https://levidromeapp.firebaseapp.com/
-					https://github.com/KJMKJM/Levidrome
-					-->
+				<div class="project"><img src="public/styles/images/profile-thumbs/levidrome.png" alt="">
+					<div class="projectInfo">
+						<div class="mainInfo">
+							<h4>Levidrome</h4>
+							<p>react / javascript / firebase / html / sass</p>
+						</div>
+						<div class="links">
+							<a href="https://levidromeapp.firebaseapp.com/">+ view live</a>
+							<a href="https://github.com/KJMKJM/Levidrome">+ view git</a>
+						</div>
+					</div>
 				</div>
-				<div class="project"></div>
-				<div class="project"></div>
+				<div class="project">
+					<img src="public/styles/images/profile-thumbs/catfurrtune.png" alt="">
+					<div class="projectInfo">
+						<div class="mainInfo">
+							<h4>Catfurrtune</h4>
+							<p>javascript with weighted selection / html / sass</p>
+						</div>
+						<div class="links">
+							<a href="https://levidromeapp.firebaseapp.com/">+ view live</a>
+							<a href="https://github.com/KJMKJM/Levidrome">+ view git</a>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<img src="public/styles/images/profile-thumbs/strainfinder.png" alt="">
+					<div class="projectInfo">
+						<div class="mainInfo">
+							<h4>StrainFinder</h4>
+							<p>javascript / API / html / sass</p>
+						</div>
+						<div class="links">
+							<a href="https://levidromeapp.firebaseapp.com/">+ view live</a>
+							<a href="https://github.com/KJMKJM/Levidrome">+ view git</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</header>
@@ -51,9 +82,36 @@
 		<article class="aboutText">
 			<div class="textTriangle"></div>
 			<h3 class="dark">Hello, my name is Justine Nguyen</h3>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptas, soluta deleniti dolores maxime deserunt accusamus quas recusandae dolore possimus eligendi accusantium expedita beatae porro earum quaerat, repudiandae eius repellat voluptatum commodi nostrum. Deserunt ut est impedit voluptates suscipit cumque eius repudiandae consectetur id. Soluta, voluptatem. Inventore dolore, omnis placeat praesentium voluptatum enim modi odit expedita laudantium ab aspernatur corporis.</p>
-			<div class="logoRow"></div>
-			<a href="/resume-experience" class="button">CV</a>
+			<p>And I am a front-end javascript react developer.</p>
+			<p>Previously a digital account manager and project manager, I can bring a
+			different type of understanding to web projects and applications. I’ve previously worked on campaigns creating and managing
+			multi-level access websites, experiential marketing apps, developing SEO/SEM content plans with content distribution and
+			digital media buys. I’ve also created reports involving multiple digital sources and analyzed traffic and engagement. With
+			a breadth of digital understanding we can create a beautifuly unified digital piece together.</p>
+			<div class="logoRow">
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/react.png" alt="">
+				</div>
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/javascript.png" alt="">
+				</div>
+				<div class="logoIcon2">
+					<img src="public/styles/images/about-skills/jquery.png" alt="">
+				</div>
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/sass.png" alt="">
+				</div>
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/gulp.png" alt="">
+				</div>
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/html5.png" alt="">
+				</div>
+				<div class="logoIcon">
+					<img src="public/styles/images/about-skills/css3.png" alt="">
+				</div>
+			</div>
+			<!-- <a href="/resume-experience" class="button">CV</a> -->
 		</article>
 		
 		<article class="aboutInfo">
@@ -72,9 +130,10 @@
 				</div>
 			</div>
 			<div class="profileImg">
-				<img src="dev/styles/images/justine-nguyen-front-end-javscript-react-developer.jpg" alt="">
+				<img src="public/styles/images/justine-nguyen-front-end-javscript-react-developer.jpg" alt="">
 			</div>
 		</article>
+		<div class="spacerRow"></div>
 	</section>
 	<section id="contact" class="contactBgWhite">
 		<div class="contact">
@@ -97,13 +156,16 @@
 		</div>
 	</section>
 
-	<footer id="footer" class="dark">
-		<p class="textWrapper">
-			Design & development by Justine Nguyen 2018
-		</p>
+	<footer id="footer" class="dark">	
+		<div class="footerText">
+			<p>
+				Design & development by Justine Nguyen 2018
+			</p>
+		</div>
 	</footer>
 
 	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+console.log('hey');
 
-class App extends React.Component {
-    render() {
-      return (
-        <div>
-          Hello
-        </div>
-      )
+  var stickyHeaderTop = $('#stickytypeheader').offset().top;
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > stickyHeaderTop) {
+      $('#stickytypeheader').css({ position: 'fixed', top: '35px' , left: '10%'});
+      $('#sticky').css('display', 'block');
+    } else {
+      $('#stickytypeheader').css({ position: 'static', top: '0px' });
+      $('#sticky').css('display', 'none');
     }
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+  });

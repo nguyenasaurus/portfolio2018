@@ -19,12 +19,46 @@ nav.projects {
     @include flexDirect(row);
     @extend .wrapper;
     margin: 20px auto;
+    margin-bottom: 100px;
     position: relative;
-    bottom: -75px;
+    bottom: -50px;
     .project {
         width: 30%;
         height: inherit;
-        background: $mauve;
         margin: 0 auto;
+        .projectInfo {
+            @include flexDirect(column);
+            justify-content: space-around;
+            position: relative;
+            bottom: 51%;
+            background: rgba(231, 220, 217, 0.9);
+            color: #5f4b8b;
+            text-align: left;
+            width: 84%;
+            margin: 0 auto;
+            height: 45%;
+            .mainInfo {
+                margin: 20px;
+            }
+            h4 {
+                @extend h1;
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+        .links{
+            font-family: $bodyFont;
+            font-size: 0.8rem;
+            margin: 20px;
+            a {
+                margin-right: 15px;
+            &:hover {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            }
+        }
     }
 }

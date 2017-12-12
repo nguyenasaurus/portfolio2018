@@ -1,8 +1,22 @@
 footer {
-    margin: 20px auto;
-    @extend .wrapper;
-    border-top: 4px solid black;
+    @extend .bgWhite;
+        padding-top: 50px;
+    .footerText{
+        margin: 0 auto;
+        @extend .wrapper;
+        padding: 30px 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        margin: 0 auto;
+        background: linear-gradient(320deg, #eb9687,#00a28a,#352e45);
+    }
     p {
         font-size: 0.8rem;
+        font-style: italic;
+        font-family: $primaryFont;
     }
 }

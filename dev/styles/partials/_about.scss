@@ -3,7 +3,8 @@ section.aboutGradient {
     width: 100%;
     display: inline-block;
     .aboutText {
-        margin: 60px auto;
+        margin: 0px auto;
+        margin-top:140px;
         @extend .wrapper;
         width: 90%;
         float:right;
@@ -16,49 +17,69 @@ section.aboutGradient {
             padding-top:20px;
         }
         p {
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: $grey;
-            line-height: 1.6rem;
-            margin: 40px;
+            line-height: 1.4rem;
+            margin: 10px 40px;
         }
         .button {
             border-color: $purple;
             color: $purple;
+            font-family: $bodyFont;
+            font-size: 1rem;
+            margin-left: 30px;
         }
     }
 }
 
-// .triangle {
-//     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-//     clip-path: polygon(0 0, 0% 100%, 100% 0);
-// }
-
 div.textTriangle {
-    shape-outside: polygon(0 0, 0 200px, 400px 800px);
+    shape-outside: polygon(90% 0%, 100% 0, 0 80%, 0 70%);
     width: 100%;
     height: 100vh;
-    float: left;
+    float: right;
+}
+
+.logoRow {
+    @include flexDirect(row);
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom:20px;
+    .logoIcon {
+        width: 40px;
+        margin-right:15px;
+        img {
+            width: 150%;
+        }
+    }
+    .logoIcon2 {
+        width: 60px;
+        margin-right:15px;
+        img {
+            width:150%;
+        }
+    }
 }
 
 .aboutInfo {
     @extend .wrapper;
     width: 50%;
     margin-right: 80px;
-    border: 1px solid black;
+    height: 50px;
     position: relative;
     bottom: 200px;
     float:right;
-    .socilInfo {
+    .socialInfo {
         margin-top: 10px;
         .h3 {
             margin: 20px auto;
         }
     }
     .socialIcons {
+        margin-top: 20px;
         @include flexDirect(row);
         @include flexJustify(left);
         .circle {
-            @include circle(30px);
+            @include circle(40px);
             @include centerMost;
             background: $mauve;
             margin: 0 10px;
@@ -69,10 +90,16 @@ div.textTriangle {
         width: 50%;
         float: right;
         position: relative;
-        bottom: 350px;
+        bottom: 400px;
     }
 }
 
 i.fa {
     color: $purple;
+}
+
+.spacerRow {
+    height: 100px;
+    width: 100%;
+    display:inline-block;
 }

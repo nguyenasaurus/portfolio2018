@@ -1,17 +1,27 @@
-div.contactBgWhite {
+section.contactBgWhite {
     @extend .bgWhite;
-    margin: 50px;
+    width: 100%;
+    margin-top: -5px;
 }
 div.contact {
+    padding-top: 50px;
+    @extend .wrapper;
     @include flexDirect(row);
+    margin: 0 auto;
     color: $purple;
     font-weight: lighter;
     font-family: $primaryFont;
+    h4 {
+        font-weight: lighter;
+        margin: 10px auto;
+        margin-top:20px;
+    }
     p.ctaText{
         font-family: $primaryFont;
         font-size: 1rem;
         font-style: italic;
         margin: 10px auto;
+        margin-bottom:20px;
     }
 }
 

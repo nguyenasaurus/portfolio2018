@@ -1,4 +1,4 @@
-console.log('hey');
+console.log('Thanks for visiting!');
 
   // var stickyHeaderTop = $('#stickytypeheader').offset().top;
 

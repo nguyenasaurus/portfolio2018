@@ -31,12 +31,17 @@ h2 {
 
 h3 {
     @extend h1;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 p {
     font-size: 1.4rem;
     font-family: $bodyFont;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
 
 // LAYOUT
@@ -52,6 +57,7 @@ img {
 
 .wrapper {
     width: 80%;
+    margin:0 auto;
 }
 
 .textWrapper {

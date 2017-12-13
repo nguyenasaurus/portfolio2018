@@ -1,0 +1,74 @@
+/* Larger Devices, Desktops */
+    @media only screen and (max-width : 1200px) {
+        // portfolio buttons
+        .flickity-prev-next-button {
+            top: -10px;
+        }
+    }
+
+/* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        // portfolio buttons
+        .flickity-prev-next-button {
+            top: -20px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        // portfolio positioning
+        ul.projectGallery li.project div.projectInfo {
+            width:80%;
+            margin-top: 190px;
+            margin-left: 20px;
+            padding: 50px;
+            padding-top:80px;
+        }
+        ul.projectGallery li.project div.projectImg {
+            top:0;
+            left:0;
+            width:80%;
+        }
+        
+        // portfolio buttons
+        .flickity-prev-next-button {
+            top: -135px;
+        }
+
+        // about section
+        .profileInfo {
+            width: 70%;
+            left: -15%;
+            top:-5%;
+        }
+
+        .aboutText {
+            margin-left:25%;
+            margin-right:4%;
+            h3.dark {
+                font-size:1.8rem;
+            }
+        }
+
+        .logoRow {
+            margin-left:0px;
+        }
+
+        // contact form
+        form input.col-2 {
+            width: 100%;
+            float:left;
+        }
+        form textarea {
+            width: 100%;
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        // portfolio buttons
+        .flickity-prev-next-button.next {
+            right: -76%;
+        }
+    }

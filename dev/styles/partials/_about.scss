@@ -3,10 +3,11 @@ section.aboutGradient {
     width: 100%;
     padding: 100px 0;
     .aboutContent {
+        @extend .clearfix;
         @extend .wrapper;
-        @include flexDirect(row);
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 30px 0;
+        position:relative;
         h3 {
             margin: 20px 0 0 40px;
             padding-top:20px;
@@ -15,45 +16,58 @@ section.aboutGradient {
             font-size: 0.8rem;
             color: $grey;
             line-height: 1.4rem;
-            margin: 10px 40px;
+            margin: 30px 40px;
+        }
+        p.cv {
+            margin: 40px;
         }
         .button {
             border-color: $purple;
             color: $purple;
             font-family: $bodyFont;
-            font-size: 1rem;
-            margin-left: 30px;
+            font-size: 0.8rem;
+            &:hover {
+                background-color:$purple;
+                color:$white;
+            }
         }
     }
 }
 
-.aboutLeft {
+.profileInfo {
     width: 40%;
-    .profileImg,.socialIcons {
+    position: absolute;
+    z-index:20;
+    left:0%;
+    top: 18%;
+}
+
+.profileImg {
         width: 60%;
         margin: 0 auto;
+        
     }
-}
 
-.socialIcons {
-    padding: 20px;
-    @include flexDirect(row);
-    @include flexJustify(space-around);
-    a {
-        text-decoration: none;
-    }
-}
-
-.aboutRight {
+.about {
     background: $mauve;
-    width:60%;
+    width:80%;
+    float:right;
+    z-index:10;
+}
+
+.aboutText {
+    margin-left: 18%;
+    margin-right:2%;
 }
 
 .logoRow {
     @include flexDirect(row);
+    
     align-items: center;
+    margin-top:30px;
+    margin-right: 30px;
     margin-left: 40px;
-    margin-bottom:20px;
+    margin-bottom:40px;
     .logoIcon {
         width: 30px;
         margin-right:15px;
@@ -63,7 +77,7 @@ section.aboutGradient {
     }
     .logoIcon2 {
         width: 40px;
-        margin-right:15px;
+        margin-right:25px;
         img {
             width:150%;
         }

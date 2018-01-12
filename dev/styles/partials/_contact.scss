@@ -7,7 +7,7 @@ ul.socialIcons {
     padding: 20px 0px;
     padding-top:30px;
     @include flexDirect(row);
-    justify-content: flex-start;
+    justify-content: center;
     li {
         margin:0;
         margin-right: 40px;
@@ -20,12 +20,14 @@ ul.socialIcons {
 div.contact {
     padding: 75px 0px;
     @extend .wrapper;
-    @include flexDirect(row);
+    @include flexDirect(column);
+    justify-content: center;
     margin: 0 auto;
     color: $purple;
     font-weight: lighter;
     font-family: $primaryFont;
-    h4 {
+        text-align: center;
+    h3 {
         font-weight: lighter;
         margin: 10px auto;
         margin-top:20px;
@@ -40,41 +42,48 @@ div.contact {
 }
 
 form {
+    padding: 50px;
+    background: $purple;
+    @include flexDirect(column);
+    margin: 25px auto 0px auto;
+    width: 70%;
     input {
-        border: 1px solid $purple;
+        border: 1px solid $mauve;
+        background: transparent;
+        color: $mauve;
+        padding: 15px;
+        &::placeholder {
+            color: $mauve;
+        }
     }
     textarea {
-        border: 1px solid $purple;
-    }
-    input.col-2 {
-        width: 42%;
-        margin: 5px;
-        height: 20px;
-        padding: 5px;
-    }
-    input[type=text] {
-        float: left;
-    }
-    input[type=email] {
-        float: right;
-    }
-    textarea.full {
-        width: 95%;
-        margin: 5px;
+        @extend input;
+        resize: none;
         height: 100px;
-        padding: 5px;
+        width: 100%;
+        overflow: hidden;
+        margin: 25px auto 0px auto;
+    }
+    .info {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .input {
+            width: 45%;
+        }
     }
 }
 
 button.button {
     background: transparent;
-    border: 1px solid $purple;
-    color: $purple;
-    padding: 5px 15px;
-    margin: 0 5px 0 5px;
+    border: 1px solid $mauve;
+    color: $mauve;
+    padding: 15px 60px;
+    margin: 25px auto 0px auto;
     transition: all 0.5s ease 0s;
     &:hover {
-        color: $mauve;
-        background-color: $purple;
+        color: $purple;
+        background-color: $mauve;
     }
 }

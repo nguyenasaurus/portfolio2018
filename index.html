@@ -15,21 +15,15 @@
 			</div>
 			<h1>Justine Nguyen</h1>
 			<h2>front-end javascript/react developer</h2>
+
+			<button class="blinky">
+				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+			</button>
 		</section>
-	
-		<!-- <nav id="stickytypeheader" class="navPositioning">
-			<ul class="nav">
-				<li>Projects</li>
-				<li>About</li>
-			</ul>
-			<div class="navLogo">
-				<img src="public/styles/images/jn_logomark2018.svg" alt="">
-			</div>
-			<a target="_blank" href="" class="button">Say hello!</a>
-		</nav> -->
+
 	</header>
 	<section class="projectSection">
-		<h3 class="dark">Projects</h3>
+		<h3 id="projects" class="dark">Projects</h3>
 			<!-- <nav class="projects">
 				<ul>
 					<li>html + css + javascript</li>
@@ -171,39 +165,40 @@
 	</section>
 	<section id="contact" class="contactBgWhite">
 		<div class="contact">
-			<div class="col-2">
-				<p></p>
-			</div>
-			<div class="col-2">
-				<h3 class="dark">Say hello on social, leave a note</h3>
-					<ul class="socialIcons">
-						<li>
-							<a target="_blank" href="https://github.com/nguyenasaurus">
-								<i class="fa fa-github fa-2x" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://instagram.com/nguyenasaurus">
-								<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li>
-							<a target ="_blank" href="https://www.twitter.com/nguyenasaurus/?lang=en">
-								<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>
-				<h4>Or email directly!</h4>
-				<p class="ctaText">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i> justine@nguyenasaurus.com
-				</p>
-				<form method="POST" action="http://formspree.io/justine@nguyenasaurus.com">
-					<input class="col-2" type="text" name="name" placeholder="Your Name">
-					<input class="col-2" type="email" name="email" placeholder="Your Email">
+			<h3 class="dark">Say hello on social, leave a note</h3>
+			<ul class="socialIcons">
+				<li>
+					<a target="_blank" href="https://github.com/nguyenasaurus">
+						<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://instagram.com/nguyenasaurus">
+						<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.twitter.com/nguyenasaurus/?lang=en">
+						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<h4>Or email directly!</h4>
+			<p class="ctaText">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i> justine@nguyenasaurus.com
+			</p>
+			<form method="POST" action="http://formspree.io/justine@nguyenasaurus.com">
+			
+				<div class="info">
+					<input class="input" type="text" name="name" placeholder="Your Name">
+					<input class="input" type="email" name="email" placeholder="Your Email">
+				</div>
+			
+				<div class="info">
 					<textarea class="full" name="message" placeholder="Your Message"></textarea>
-					<button type="submit" class="button">Send</button>
-				</form>
-			</div>
+				</div>
+				<button type="submit" class="button">Send</button>
+			</form>
 		</div>
 	</section>
 
@@ -218,6 +213,7 @@
 	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="/public/scripts/smooth-scroll.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

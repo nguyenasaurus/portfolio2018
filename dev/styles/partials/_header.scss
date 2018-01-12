@@ -101,8 +101,75 @@ a.button {
         margin: 10px auto;
         font-size: 1rem;
     }
+    button {
+        background: none;
+        border: none;
+        color: white;
+        position: absolute;
+        top: 88vh;
+        font-weight: light;
+    }
 }
 
 .logo {
     width: 25%;
+}
+
+.blinky{
+  animation: blinky ease-in-out 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation: blinky ease-in-out 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: blinky ease-in-out 5s;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation: blinky ease-in-out 5s;
+  -ms-animation-iteration-count: infinite;
+}
+
+@keyframes blinky{
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes blinky{
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes blinky {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes blinky {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
 }

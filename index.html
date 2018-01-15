@@ -16,40 +16,44 @@
 			<h1>Justine Nguyen</h1>
 			<h2>front-end javascript/react developer</h2>
 
-			<button class="blinky">
-				<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
-			</button>
+			<a href="#projects">
+				<button class="blinky">
+					<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+				</button>
+			</a>
 		</section>
 
 	</header>
 	<section class="projectSection">
-		<h3 id="projects" class="dark">Projects</h3>
+		<div class="wrapper">
+			<h3 id="projects" class="dark">Projects</h3>
 			<!-- <nav class="projects">
-				<ul>
-					<li>html + css + javascript</li>
-					<li>react</li>
-					<li>front-end experiments</li>
-				</ul>
-			</nav> -->
-
+							<ul>
+								<li>html + css + javascript</li>
+								<li>react</li>
+								<li>front-end experiments</li>
+							</ul>
+						</nav> -->
+			
 			<ul class="projectGallery main-carousel">
-
+			
 				<!-- project1 -->
 				<li class="project carousel-cell">
 					<div class="projectInfo">
 						<h4>Levidrome</h4>
 						<p class="languages">react / javascript / firebase / html / sass</p>
 						<p class="projectDesc">
-							A levidrome is a word spelled forwards, but a different word spelled backwards. How do you know if a word a levidrome? Well there's an app for that. This one.</p>
-						<p class="projectDesc"> 
-							Genearated React Javascript, powered by the Oxford English Dictionary API & styled with some SASSy CSS.
-							Made during HackerYou Cohort16 with group members Manish Sabharwal & Kitty Yau.
+							A levidrome is a word spelled forwards, but a different word spelled backwards. How do you know if a word a levidrome? Well
+							there's an app for that. This one.</p>
+						<p class="projectDesc">
+							Genearated React Javascript, powered by the Oxford English Dictionary API & styled with some SASSy CSS. Made during HackerYou
+							Cohort16 with group members Manish Sabharwal & Kitty Yau.
 						</p>
 						<div class="links">
 							<i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="https://levidromeapp.firebaseapp.com/">
 								view live</a>
-							
+			
 							<i class="fa fa-github fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="https://github.com/KJMKJM/Levidrome">
 								view git</a>
@@ -59,15 +63,15 @@
 						<img src="public/styles/images/profile-thumbs/levidrome.png" alt="">
 					</div>
 				</li>
-
+			
 				<!-- project2 -->
-
+			
 				<li class="project carousel-cell">
 					<div class="projectInfo">
 						<h4>Cat Furrtune</h4>
 						<p class="languages">javascript / jquery / html5 / sass + css 3</p>
 						<p class="projectDesc">
-							A cat themed message generator with weighted message selection based on how lucky you are feline today. 
+							A cat themed message generator with weighted message selection based on how lucky you are feline today.
 						</p>
 						<p class="projectDesc">
 							Made with pure vanilly javascript with a mix of jquery and use of the jquery UI library for FUNctuality like draggable.
@@ -76,7 +80,7 @@
 							<i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="projects/catfurrtune">
 								view live</a>
-						
+			
 							<i class="fa fa-github fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="https://github.com/nguyenasaurus/catfurrtune">
 								view git</a>
@@ -86,7 +90,7 @@
 						<img src="public/styles/images/profile-thumbs/catfurrtune.png" alt="">
 					</div>
 				</li>
-
+			
 				<!-- project3 -->
 				<li class="project carousel-cell">
 					<div class="projectInfo">
@@ -102,7 +106,7 @@
 							<i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="projects/strainMD">
 								view live</a>
-						
+			
 							<i class="fa fa-github fa-lg" aria-hidden="true"></i>
 							<a target="_blank" href="https://github.com/nguyenasaurus/strainMD">
 								view git</a>
@@ -113,6 +117,7 @@
 					</div>
 				</li>
 			</ul>
+		</div>
 	</section>
 	<section id="about" class="aboutGradient">
 		<article class="aboutContent">
@@ -213,7 +218,7 @@
 	<script src="https://use.fontawesome.com/a024ed12a1.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="/public/scripts/smooth-scroll.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

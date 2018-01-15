@@ -8,6 +8,8 @@ $('.main-carousel').flickity({
   pageDots: false
 });
 
-$('body').smoothScroll({
-  delegateSelector: 'section.intro button'
+$('a').smoothScroll({
+  easing: 'swing',
+  speed: 800, 
+  autoCoefficient: 1,
 });

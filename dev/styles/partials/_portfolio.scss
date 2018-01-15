@@ -3,6 +3,9 @@
     @extend .bgWhite;
     padding: 50px 0;
     padding-bottom:0;
+    .wrapper {
+        padding-bottom: 50px;
+    }
     h3 {
         margin-top:25px;
         margin-bottom: 50px;
@@ -24,9 +27,8 @@ nav.projects {
 ul.projectGallery {
     margin: 0 auto;
     display: block;
-    overflow: hidden;
-    width:70%;
-    padding-bottom:20px;
+    width:80%;
+    padding-bottom:50px;
     li.project {
         width: 100%;
         position: absolute;
@@ -87,36 +89,32 @@ ul.projectGallery {
 
 
 // flickity button styles
+.flickity-viewport {
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
 
-/* smaller, dark, rounded square */
+.flickity-enabled:focus {
+    outline: 0;
+    outline: 0px -webkit-focus-ring-color;
+}
+
 .flickity-prev-next-button {
-    position:relative;
+    position: relative;
+    bottom: 11rem;
     width: 30px;
     height: 30px;
-    border: 1px solid $purple;
+    border: none;
     background: transparent;
-    padding-top:5px;
-    margin-top: 120px;
-    transition: all 0.5s ease 0s;
-    &:hover {
-        background-color: $purple;
-        .arrow {
-            fill:$white;
-        }
+    .arrow {
+        fill: $purple;
     }
 }
-/* arrow color */
-.flickity-prev-next-button .arrow {
-    fill: $purple;
-    transition: all 0.5s ease 0s;
-}
-.flickity-prev-next-button.no-svg {
-    color: $purple;
-}
-/* position outside */
+
 .flickity-prev-next-button.previous {
-    left: 7%;
-}
+    left: -7%;
+    }
+
 .flickity-prev-next-button.next {
-    right: -85%;
+    left: 100%;
 }

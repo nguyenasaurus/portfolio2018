@@ -108,6 +108,9 @@ a.button {
         position: absolute;
         top: 88vh;
         font-weight: light;
+        i {
+          transform: translate(-20px,0px);
+        }
     }
 }
 

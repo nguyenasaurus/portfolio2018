@@ -13,3 +13,4 @@ $('a').smoothScroll({
   speed: 800, 
   autoCoefficient: 1,
 });
+

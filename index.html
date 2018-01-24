@@ -36,8 +36,31 @@
 						</nav> -->
 			
 			<ul class="projectGallery main-carousel">
-			
-				<!-- project1 -->
+				<!-- latest project -->
+				<li class="project carousel-cell">
+					<div class="projectInfo">
+						<h4>Rat Chase</h4>
+						<p class="languages">react / javascript / firebase / html / sass</p>
+						<p class="projectDesc">
+							Built in 7 days using ReactJS and applying the learnings from reading Scrum by J.J Sutherland. By the end of each day or the following morning for stand-up we had a showable, workable feature added to the game. We prioritized board features and cut out would take us past our 7 day deadline. We also integrated a highscores board that posts to and pulls from Firebase.</p>
+						<p class="projectDesc">
+							Made post HackerYou Cohort16 with Cohort16 friend Simon Steer.
+						</p>
+						<div class="links">
+							<i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>
+							<a target="_blank" href="https://catmouse-1337.firebaseapp.com/">
+								view live</a>
+				
+							<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+							<a target="_blank" href="https://github.com/schloppy/catMouse">
+								view git</a>
+						</div>
+					</div>
+					<div class="projectImg">
+						<img src="public/styles/images/profile-thumbs/ratchase.png" alt="">
+					</div>
+				</li>
+				<!-- LEVIDROME -->
 				<li class="project carousel-cell">
 					<div class="projectInfo">
 						<h4>Levidrome</h4>
@@ -64,7 +87,7 @@
 					</div>
 				</li>
 			
-				<!-- project2 -->
+				<!-- CAT FURRTUNE -->
 			
 				<li class="project carousel-cell">
 					<div class="projectInfo">
@@ -88,6 +111,28 @@
 					</div>
 					<div class="projectImg">
 						<img src="public/styles/images/profile-thumbs/catfurrtune.png" alt="">
+					</div>
+				</li>
+				<!-- SONDHI DEFENCE SPLASH -->
+				<li class="project carousel-cell">
+					<div class="projectInfo">
+						<h4>Sondhi Defence</h4>
+						<p class="languages">jquery / html / sass</p>
+						<p class="projectDesc">
+							Simple HTML responsive one page splash landing page with jQuery form interactivity. Using Sass and Foundation framework.
+						</p>
+						<div class="links">
+							<i class="fa fa-window-maximize fa-lg" aria-hidden="true"></i>
+							<a target="_blank" href="http://sondhidefence.ca">
+								view live</a>
+				
+							<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+							<a target="_blank" href="https://github.com/nguyenasaurus/sondhi-splash-html">
+								view git</a>
+						</div>
+					</div>
+					<div class="projectImg">
+						<img src="public/styles/images/profile-thumbs/sondhidefence.png" alt="">
 					</div>
 				</li>
 			
@@ -133,7 +178,7 @@
 					<h3 class="dark">Hello, my name is Justine Nguyen</h3>
 					<p>I am a front-end javascript react developer. I’m passionate about writing clean and well documented code.
 					</p>
-					<p>I was previously a digital account manager and project manager. I've worked on digital b2b and b2c campaigns with the objective of producing cohesive brand engagement stories from various digital communication channels. My experiences allow me to bring a forward a process based and problem solving focused understanding to website development projects and application development.</p>
+					<p>I was previously a digital account manager and project manager. I've worked on digital b2b and b2c campaigns with the objective of producing cohesive brand engagement stories from various digital communication channels. My experiences allow me to bring forward a process based and problem solving focused understanding to website development projects and application development.</p>
 					<p>With a solid understanding of APIs, data structures, and the interactivity of React & Javascript, I strive to create thoughtful
 					and engaging digital experiences.
 					</p>	
@@ -192,18 +237,39 @@
 			<p class="ctaText">
 				<i class="fa fa-envelope-o" aria-hidden="true"></i> justine@nguyenasaurus.com
 			</p>
-			<form method="POST" action="http://formspree.io/justine@nguyenasaurus.com">
+			<form id="contactForm">
 			
-				<div class="info">
-					<input class="input" type="text" name="name" placeholder="Your Name">
-					<input class="input" type="email" name="email" placeholder="Your Email">
-				</div>
-			
-				<div class="info">
-					<textarea class="full" name="message" placeholder="Your Message"></textarea>
-				</div>
-				<button type="submit" class="button">Send</button>
+				<ul class="contact">
+					<li>
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input type="text" name="name" placeholder="Your Name">
+					</li>
+					<li>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<input type="email" name="email" placeholder="Your Email">
+					</li>
+				</ul>
+				<ul class="message">
+					<li>
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+						<textarea name="message" placeholder="Your Message"></textarea>
+					</li>
+				</ul>
+				<button type="submit" class="button">
+					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+				</button>
 			</form>
+			<div class="thankYou">
+				<div class="message">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+					<p>
+						Thank you, your message has been sent through.
+					</p>
+					<p>
+						I'll get back to you as soon as I can!
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
